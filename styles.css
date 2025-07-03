@@ -93,33 +93,6 @@ section#shapes-links {
   );
 }
 
-/* Triangle */
-.triangle {
-  width: 0;
-  height: 0;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 140px solid #9b59b6;
-  background: none;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  font-weight: 700;
-  font-size: 1.3rem;
-  cursor: pointer;
-  position: relative;
-  padding-bottom: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  user-select: none;
-  text-decoration: none;
-}
-
-.triangle:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 14px 40px rgba(0,0,0,0.15);
-}
 
 /* Responsive */
 @media (max-width: 720px) {
