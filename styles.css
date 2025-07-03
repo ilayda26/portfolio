@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f5f1e9; /* bej */
+  background: #f5f1e9; 
   color: #333;
   line-height: 1.6;
   padding: 30px 20px;
@@ -21,7 +21,16 @@ header h1 {
   margin-bottom: 30px;
 }
 
-/* About Me - simple paragraph, no box */
+#about-me img {
+  border-radius: 50%;     
+  max-width: 150px;        /
+  height: auto;            
+  display: block;          
+  margin: 0 auto 20px;     
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);  /
+}
+
+/
 section#about {
   max-width: 700px;
   margin: 0 auto 50px auto;
@@ -30,7 +39,7 @@ section#about {
   color: #444;
 }
 
-/* Shapes container */
+
 section#shapes-links {
   display: flex;
   justify-content: center;
@@ -39,7 +48,7 @@ section#shapes-links {
   margin-bottom: 70px;
 }
 
-/* Common shape styles */
+
 .shape {
   display: flex;
   justify-content: center;
@@ -57,19 +66,19 @@ section#shapes-links {
   position: relative;
 }
 
-/* Hover effect */
+
 .shape:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 14px 40px rgba(0,0,0,0.15);
 }
 
-/* Circle */
+
 .circle {
   border-radius: 50%;
   background: linear-gradient(135deg, #2980b9, #3498db);
 }
 
-/* Hexagon */
+
 .hexagon {
   width: 140px;
   height: 120px;
@@ -81,7 +90,7 @@ section#shapes-links {
   );
 }
 
-/* Pentagon */
+
 .pentagon {
   width: 140px;
   height: 140px;
@@ -94,7 +103,7 @@ section#shapes-links {
 }
 
 
-/* Responsive */
+
 @media (max-width: 720px) {
   section#shapes-links {
     flex-direction: column;
@@ -110,7 +119,7 @@ section#shapes-links {
   }
 }
 
-/* Projects and CV sections */
+
 section#projects, section#cv {
   max-width: 700px;
   margin: 0 auto 60px auto;
@@ -126,7 +135,7 @@ section#projects h2, section#cv h2 {
   margin-bottom: 20px;
 }
 
-/* Project list flex */
+
 .project-list {
   display: flex;
   justify-content: space-between;
@@ -135,7 +144,7 @@ section#projects h2, section#cv h2 {
   margin-top: 20px;
 }
 
-/* Single project/card */
+
 .project-item {
   background: #fff;
   border-radius: 10px;
