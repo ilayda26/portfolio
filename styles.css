@@ -1,4 +1,4 @@
-
+/* Reset and basic styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,144 +11,121 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
-}
-
-header {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 header h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: #2c3e50;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-top: 8px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
     margin-bottom: 40px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #2980b9;
-    font-weight: 600;
-    padding-bottom: 3px;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s;
-}
-
-nav a:hover {
-    border-color: #2980b9;
-}
-
-section {
-    max-width: 900px;
-    margin: 0 auto 60px auto;
+/* About Me section */
+section#about {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
     background: white;
-    border-radius: 10px;
-    padding: 25px 30px;
+    padding: 30px 25px;
+    border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
-section h2 {
+section#about h2 {
+    color: #2980b9;
     margin-bottom: 20px;
-    color: #34495e;
-    border-left: 6px solid #2980b9;
-    padding-left: 12px;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background: #ecf0f1;
-    padding: 15px 20px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    cursor: default;
-}
-
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(41, 128, 185, 0.3);
-}
-
-.project-card h3 {
-    margin-bottom: 8px;
-    color: #2c3e50;
-}
-
-.project-card p {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.cv-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 28px;
-    background: #2980b9;
-    color: white;
-    font-weight: 600;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.cv-button:hover {
-    background: #1c5980;
-}
-
-form {
+/* Shapes container */
+section#links {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 70px;
 }
 
-input, textarea {
-    padding: 12px 15px;
-    border: 1.5px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-input:focus, textarea:focus {
-    border-color: #2980b9;
-    outline: none;
-}
-
-button {
-    width: 120px;
-    padding: 12px;
-    border: none;
-    background-color: #2980b9;
+/* Common shape styles */
+section#links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-weight: 600;
-    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 130px;
+    height: 130px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    align-self: flex-start;
+    box-shadow: 0 6px 15px rgba(41, 128, 185, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    user-select: none;
+    font-size: 1.2rem;
 }
 
-button:hover {
-    background-color: #1c5980;
+/* Circle shape for Projects */
+.shape-circle {
+    border-radius: 50%;
+    background: #2980b9;
 }
 
-@media (max-width: 600px) {
-    nav {
+/* Hexagon shape for CV */
+.shape-hex {
+    background: #27ae60;
+    clip-path: polygon(
+        25% 5%, 75% 5%, 
+        100% 50%, 75% 95%, 
+        25% 95%, 0% 50%
+    );
+}
+
+/* Diamond shape for Contact */
+.shape-diamond {
+    background: #e67e22;
+    clip-path: polygon(
+        50% 0%, 100% 50%, 
+        50% 100%, 0% 50%
+    );
+}
+
+/* Hover effect for shapes */
+section#links a:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(41, 128, 185, 0.5);
+}
+
+/* Sections for projects, cv, contact */
+section#projects,
+section#cv,
+section#contact {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+section#projects h2,
+section#cv h2,
+section#contact h2 {
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+/* Link styles inside text */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+    section#links {
         flex-direction: column;
-        gap: 15px;
+        gap: 40px;
     }
 }
