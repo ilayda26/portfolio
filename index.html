@@ -1,61 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ilayda Ray - Computer Science Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        header, footer {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #0366d6;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name - Computer Science Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #005f99;
+      text-decoration: underline;
+    }
+    
+    header, footer {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+    header h1 {
+      margin-bottom: 0.2rem;
+      font-weight: 700;
+      color: #007acc;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0;
+      color: #555;
+    }
+    
+    nav {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+    
+    section {
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    section:last-of-type {
+      border: none;
+    }
+    h2 {
+      color: #007acc;
+      margin-bottom: 1rem;
+      border-left: 5px solid #007acc;
+      padding-left: 0.5rem;
+    }
+    
+    ul.projects-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul.projects-list li {
+      margin-bottom: 1rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+    ul.projects-list li strong {
+      font-size: 1.1rem;
+      color: #004a80;
+    }
+    
+    footer p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    footer a {
+      color: #007acc;
+    }
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Ilayda Ray</h1>
-        <p>Computer Science Student</p>
-        <nav>
-            <a href="C:\Users\ilayd\Downloads\CV.pdf" target="_blank">CV (PDF)</a>
-            <a href="#projects">Projects</a>
-            <a href="https://github.com/ilayda26/portfolio.git" target="_blank">GitHub Repo</a>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am Ilayda, a highly-motivated computer science student at Gisma University in Berlin. I have solid understanding of computer science fundamentals, and I enjoy creating innovative solutions to real-world challanges.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> A simple Library Project  <a href="C:\Users\ilayd\PycharmProjects\pythonClass Project\ClassProject.py" target="_blank">View Code</a></li>
-            <li><strong>Project 2:</strong> Personal Data Collective Project <a href="C:\Users\ilayd\Downloads\ExceptionsProject.py" target="_blank">View Code</a></li>
-             <li><strong>Project 3:</strong> Car Registration System <a href="C:\Users\ilayd\PycharmProjects\scientificProject\car_registration_system.ipynb" target="_blank">View Code</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Contact me: <a href="mailto:ilaydaraay@gmailcom">ilaydaraay@.com</a></p>
-    </footer>
+  <header>
+    <h1>Your Name</h1>
+    <p>Computer Science Student | Aspiring Developer</p>
+    <nav>
+      <a href="YourCV.pdf" target="_blank" title="Download my CV">
+        <i class="fas fa-file-pdf"></i> CV (PDF)
+      </a>
+      <a href="#projects" title="See my projects">
+        <i class="fas fa-code"></i> Projects
+      </a>
+      <a href="https://github.com/yourusername/yourrepo" target="_blank" title="GitHub Repository">
+        <i class="fab fa-github"></i> GitHub Repo
+      </a>
+      <a href="report.pdf" target="_blank" title="Download project report">
+        <i class="fas fa-file-alt"></i> Report (PDF)
+      </a>
+    </nav>
+  </header>
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Welcome to my computer science portfolio! Here you can find my CV, technical projects, and related exercises showcasing my skills and experience.</p>
+  </section>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="projects-list">
+      <li>
+        <strong>Project 1:</strong> Brief description of project 1.  
+        <a href="projects/project1" target="_blank" title="View Project 1 Code or Demo">View Code</a>
+      </li>
+      <li>
+        <strong>Project 2:</strong> Brief description of project 2.  
+        <a href="projects/project2" target="_blank" title="View Project 2 Code or Demo">View Code</a>
+      </li>
+      <!-- Add more projects here -->
+    </ul>
+  </section>
+  
+  <footer>
+    <p>Contact me: <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a></p>
+  </footer>
 </body>
 </html>
+
+ 
