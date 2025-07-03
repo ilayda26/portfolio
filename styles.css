@@ -1,4 +1,4 @@
-/* Reset and basic styles */
+/* Reset and basic */
 * {
     margin: 0;
     padding: 0;
@@ -20,55 +20,62 @@ header h1 {
     margin-bottom: 40px;
 }
 
-/* About Me section */
+/* About Me without box */
 section#about {
-    max-width: 600px;
-    margin: 0 auto 50px auto;
-    background: white;
-    padding: 30px 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    padding: 0 15px;
 }
 
 section#about h2 {
     color: #2980b9;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
-/* Shapes container */
-section#links {
+/* Container for shapes */
+section#shapes-links {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    margin-bottom: 70px;
+    gap: 60px;
+    margin-bottom: 80px;
 }
 
-/* Common shape styles */
-section#links a {
+/* Common styles for shapes */
+.shape {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: 700;
+    font-size: 1.3rem;
     text-decoration: none;
-    width: 130px;
-    height: 130px;
     cursor: pointer;
-    box-shadow: 0 6px 15px rgba(41, 128, 185, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: 140px;
+    height: 140px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     user-select: none;
-    font-size: 1.2rem;
+    position: relative;
 }
 
-/* Circle shape for Projects */
-.shape-circle {
+/* Hover effect */
+.shape:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+
+/* Circle */
+.circle {
     border-radius: 50%;
-    background: #2980b9;
+    background: linear-gradient(135deg, #2980b9, #3498db);
 }
 
-/* Hexagon shape for CV */
-.shape-hex {
-    background: #27ae60;
+/* Hexagon */
+.hexagon {
+    width: 140px;
+    height: 120px;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
     clip-path: polygon(
         25% 5%, 75% 5%, 
         100% 50%, 75% 95%, 
@@ -76,22 +83,19 @@ section#links a {
     );
 }
 
-/* Diamond shape for Contact */
-.shape-diamond {
-    background: #e67e22;
+/* Pentagon */
+.pentagon {
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(135deg, #e67e22, #f39c12);
     clip-path: polygon(
-        50% 0%, 100% 50%, 
-        50% 100%, 0% 50%
+        50% 0%, 90% 35%, 
+        73% 95%, 27% 95%, 
+        10% 35%
     );
 }
 
-/* Hover effect for shapes */
-section#links a:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 14px 30px rgba(41, 128, 185, 0.5);
-}
-
-/* Sections for projects, cv, contact */
+/* Sections below */
 section#projects,
 section#cv,
 section#contact {
@@ -111,7 +115,6 @@ section#contact h2 {
     margin-bottom: 20px;
 }
 
-/* Link styles inside text */
 a {
     color: #2980b9;
     text-decoration: none;
@@ -123,8 +126,8 @@ a:hover {
 }
 
 /* Responsive */
-@media (max-width: 650px) {
-    section#links {
+@media (max-width: 700px) {
+    section#shapes-links {
         flex-direction: column;
         gap: 40px;
     }
