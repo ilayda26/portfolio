@@ -115,10 +115,57 @@ section#contact h2 {
     margin-bottom: 20px;
 }
 
-a {
+/* Projects styling */
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.project-item h3 {
+    color: #2980b9;
+    margin-bottom: 12px;
+}
+
+.project-item p {
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.project-item a {
     color: #2980b9;
     text-decoration: none;
     font-weight: 600;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Links style */
+a {
+    color: #2980b9;
+    text-decoration: none;
 }
 
 a:hover {
@@ -130,5 +177,9 @@ a:hover {
     section#shapes-links {
         flex-direction: column;
         gap: 40px;
+    }
+    .project-list {
+        flex-direction: column;
+        gap: 25px;
     }
 }
