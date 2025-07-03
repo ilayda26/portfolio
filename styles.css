@@ -28,13 +28,6 @@ section#about {
   font-size: 1.2rem;
   font-weight: 500;
   color: #444;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  
-  align-items: center;      
-  height: 300px;            
-  text-align: center;
 }
 
 
@@ -99,7 +92,6 @@ section#shapes-links {
     10% 35%
   );
 }
-
 
 
 @media (max-width: 720px) {
@@ -180,4 +172,5 @@ section#projects h2, section#cv h2 {
 .project-item a:hover {
   text-decoration: underline;
 }
+
 
