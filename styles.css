@@ -21,22 +21,6 @@ header h1 {
   margin-bottom: 30px;
 }
 
-#about-me img {
-  border-radius: 50%;     
-  max-width: 150px;        
-  height: auto;            
-  display: block;          
-  margin: 0 auto 20px;     
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);  /
-}
-.profile-photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 10px auto;
-}
 
 
 /
